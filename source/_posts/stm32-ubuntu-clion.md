@@ -1,5 +1,5 @@
 ---
-title: stm32-ubuntu-clion
+title: 在Ubuntu上搭建STM32开发环境（CUBEMX+Clion+Ozone）
 date: 2025-10-05 20:55:00
 tags:
     - stm32开发环境
