@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Hexo Theme Redefine">
+    
+    <meta name="author" content="He WenXuan">
+    <!-- preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    
+        
+        
+        
+            <link rel="preconnect" href="https://evan.beee.top" crossorigin>
+        
+    
+    <!--- Seo Part-->
+    
+    <link rel="canonical" href="http://example.com/2026/02/16/yolo-learn/"/>
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="revisit-after" content="1 days">
+    
+    
+    
+        
+        <meta name="description" content="Hexo Theme Redefine, Redefine Your Hexo Journey.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何从零开始学习使用yolo">
+<meta property="og:url" content="http://example.com/2026/02/16/yolo-learn/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Hexo Theme Redefine, Redefine Your Hexo Journey.">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/images/redefine-og.webp">
+<meta property="article:published_time" content="2026-02-16T08:02:28.938Z">
+<meta property="article:modified_time" content="2026-02-16T08:08:14.942Z">
+<meta property="article:author" content="HeWenXuan">
+<meta property="article:tag" content="教程">
+<meta property="article:tag" content="yolo">
+<meta property="article:tag" content="计算机视觉">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/images/redefine-og.webp">
+    
+    
+    <!--- Icon Part-->
+    <link rel="icon" type="image/png" href="/images/my_mine_logo.webp" sizes="192x192">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/my_mine_logo.webp">
+    <meta name="theme-color" content="#FF69B4">
+    <link rel="shortcut icon" href="/images/my_mine_logo.webp">
+    <!--- Page Info-->
+    
+    <title>
+        
+            如何从零开始学习使用yolo | Wenx&#39;s blog
+        
+    </title>
+
+    <link rel="stylesheet" href="https://evan.beee.top/projects/hexo-theme-redefine@2.8.2/source/fonts/Chillax/chillax.css">
+
+    <!--- Inject Part-->
+    
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    
+        <link rel="stylesheet" href="https://evan.beee.top/projects/hexo-theme-redefine@2.8.2/source/css/build/tailwind.css">
+    
+
+    <link rel="stylesheet" href="https://evan.beee.top/projects/hexo-theme-redefine@2.8.2/source/fonts/GeistMono/geist-mono.css">
+    <link rel="stylesheet" href="https://evan.beee.top/projects/hexo-theme-redefine@2.8.2/source/fonts/Geist/geist.css">
+    <!--- Font Part-->
+    
+    
+    
+    
+    
+    
+
+    <script id="hexo-configurations">
+    window.config = {"hostname":"example.com","root":"/","language":"en","path":"search.json"};
+    window.theme = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true,"delete_mask":false,"title_alignment":"left","headings_top_spacing":{"h1":"3.2rem","h2":"2.4rem","h3":"1.9rem","h4":"1.6rem","h5":"1.4rem","h6":"1.3rem"}},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":true,"auto":false,"list":[]},"code_block":{"copy":true,"style":"mac","highlight_theme":{"light":"github","dark":"github-dark"},"font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":3,"number":true,"expand":true,"init_open":true},"copyright":{"enable":true,"default":"cc_by_nc_sa"},"lazyload":true,"pangu_js":false,"recommendation":{"enable":true,"title":"推荐阅读","limit":3,"mobile_limit":2,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#FF69B4","secondary":null,"default_mode":"light"},"global":{"fonts":{"chinese":{"enable":false,"family":null,"url":null},"english":{"enable":false,"family":null,"url":null},"title":{"enable":false,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":false,"percentage":true},"website_counter":{"url":"https://cn.vercount.one/js","enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"single_page":true,"preloader":{"enable":false,"custom_message":null},"open_graph":{"enable":true,"image":"/images/redefine-og.webp","description":"Hexo Theme Redefine, Redefine Your Hexo Journey."},"google_analytics":{"enable":false,"id":null}},"home_banner":{"enable":true,"style":"fixed","image":{"light":"https://cdn.jsdelivr.net/gh/mouxuanjun/cloud-img/image/20251227213339235.jpg","dark":"https://cdn.jsdelivr.net/gh/mouxuanjun/cloud-img/image/20251227213051046.jpg"},"title":"Wenx's Blog","subtitle":{"text":["Welcome to my blog!","Ciallo~(∠・ω＜)⌒☆"],"hitokoto":{"enable":false,"show_author":false,"api":"https://v1.hitokoto.cn"},"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":5000,"loop":true,"smart_backspace":true},"text_color":{"light":"#ff1cae","dark":"#c0d9d9"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":null,"url":null},"social_links":{"enable":true,"style":"default","links":{"github":"https://github.com/mouxuanjun","instagram":null,"zhihu":"https://www.zhihu.com/people/65-45-47-31-19","twitter":null,"email":"hewenxuan040923@gmail.com","steam":"https://steamcommunity.com/profiles/76561199532274174/","csdn":"https://blog.csdn.net/2301_80219407?spm=1000.2115.3001.5343"},"qrs":{"weixin":null}}},"plugins":{"feed":{"enable":false},"aplayer":{"enable":false,"type":"fixed","audios":[{"name":null,"artist":null,"url":null,"cover":null,"lrc":null}]},"mermaid":{"enable":false,"version":"11.4.1"}},"version":"2.8.2","navbar":{"auto_hide":false,"color":{"left":"#f78736","right":"#367df7","transparency":35},"width":{"home":"1200px","pages":"1000px"},"links":{"Home":{"path":"/","icon":"house"},"Tags":{"path":"/tags/","icon":"fa-solid fa-tags"},"Contact me":{"icon":"fa-solid fa-circle-user","submenus":{"github":"https://github.com/mouxuanjun","email":"hewenxuan040923@gmail.com","steam":"https://steamcommunity.com/profiles/76561199532274174/","zhihu":"https://www.zhihu.com/people/65-45-47-31-19","csdn":"https://blog.csdn.net/2301_80219407?spm=1000.2115.3001.5343"}}},"search":{"enable":true,"preload":true}},"page_templates":{"friends_column":2,"tags_style":"blur"},"home":{"sidebar":{"enable":true,"position":"left","first_item":"info","announcement":"Welcome to my blog!","show_on_mobile":true,"links":null},"article_date_format":"auto","excerpt_length":200,"categories":{"enable":true,"limit":3},"tags":{"enable":true,"limit":3}},"footerStart":"2025/5/6 20:05:00"};
+    window.lang_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
+    window.data = {"masonry":false};
+  </script>
+    
+    <!--- Fontawesome Part-->
+    <link rel="stylesheet" href="https://evan.beee.top/projects/hexo-theme-redefine@2.8.2/source/fontawesome/fontawesome.min.css">
+    <link rel="stylesheet" href="https://evan.beee.top/projects/hexo-theme-redefine@2.8.2/source/fontawesome/brands.min.css">
+    <link rel="stylesheet" href="https://evan.beee.top/projects/hexo-theme-redefine@2.8.2/source/fontawesome/solid.min.css">
+    <link rel="stylesheet" href="https://evan.beee.top/projects/hexo-theme-redefine@2.8.2/source/fontawesome/regular.min.css">
+    
+    
+    
+    
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+
+<body>
+	<div class="progress-bar-container">
+	
+
+	
+	<span class="pjax-progress-bar"></span>
+	<!--        <span class="swup-progress-icon">-->
+	<!--            <i class="fa-solid fa-circle-notch fa-spin"></i>-->
+	<!--        </span>-->
+	
+</div>
+
+<main class="page-container" id="swup">
+
+	
+
+	<div class="main-content-container flex flex-col justify-between min-h-dvh">
+		<div class="main-content-header">
+			<header class="navbar-container px-6 md:px-12">
+    <div class="navbar-content transition-navbar ">
+        <div class="left">
+            
+            <a class="logo-title" href="/">
+                
+                Wenx&#39;s blog
+                
+            </a>
+        </div>
+
+        <div class="right">
+            <!-- PC -->
+            <div class="desktop">
+                <ul class="navbar-list">
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/"
+                                        >
+                                    <i class="house fa-fw"></i>
+                                    首页
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/tags/"
+                                        >
+                                    <i class="fa-solid fa-tags fa-fw"></i>
+                                    标签
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class="has-dropdown"
+                                   href="#"
+                                        onClick=&#34;return false;&#34;>
+                                    <i class="fa-solid fa-circle-user fa-fw"></i>
+                                    CONTACT ME
+                                    <i class="fa-solid fa-chevron-down fa-fw"></i>
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                                    <ul class="sub-menu">
+                                        
+                                            <li>
+                                                <a target="_blank" rel="noopener" href="https://github.com/mouxuanjun">
+                                                    GITHUB
+                                                </a>
+                                            </li>
+                                        
+                                            <li>
+                                                <a href="/hewenxuan040923@gmail.com">
+                                                    EMAIL
+                                                </a>
+                                            </li>
+                                        
+                                            <li>
+                                                <a target="_blank" rel="noopener" href="https://steamcommunity.com/profiles/76561199532274174/">
+                                                    STEAM
+                                                </a>
+                                            </li>
+                                        
+                                            <li>
+                                                <a target="_blank" rel="noopener" href="https://www.zhihu.com/people/65-45-47-31-19">
+                                                    ZHIHU
+                                                </a>
+                                            </li>
+                                        
+                                            <li>
+                                                <a target="_blank" rel="noopener" href="https://blog.csdn.net/2301_80219407?spm=1000.2115.3001.5343">
+                                                    CSDN
+                                                </a>
+                                            </li>
+                                        
+                                    </ul>
+                                
+                            </li>
+                    
+                    
+                        <li class="navbar-item search search-popup-trigger">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <!-- Mobile -->
+            <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                
+                <div class="icon-item navbar-bar">
+                    <div class="navbar-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile sheet -->
+    <div class="navbar-drawer h-dvh w-full absolute top-0 left-0 bg-background-color flex flex-col justify-between">
+        <ul class="drawer-navbar-list flex flex-col px-4 justify-center items-start">
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/"
+                        >
+                            <span>
+                                首页
+                            </span>
+                            
+                                <i class="house fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/tags/"
+                        >
+                            <span>
+                                标签
+                            </span>
+                            
+                                <i class="fa-solid fa-tags fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+                
+                    
+
+                    <li class="drawer-navbar-item-sub text-base my-1.5 flex flex-col w-full">
+                        
+                        <div class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary cursor-pointer text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                             navbar-data-toggle="submenu-Contact me"
+                        >
+                            <span>
+                                CONTACT ME
+                            </span>
+                            
+                                <i class="fa-solid fa-chevron-right fa-sm fa-fw transition-all"></i>
+                            
+                        </div>
+                        
+
+                        
+                            <div class="flex-col items-start px-2 py-2 hidden" data-target="submenu-Contact me">
+                                
+                                    <div class="drawer-navbar-item text-base flex flex-col justify-center items-start hover:underline active:underline hover:underline-offset-1 rounded-3xl">
+                                        <a class=" text-third-text-color text-xl"
+                                           target="_blank" rel="noopener" href="https://github.com/mouxuanjun">GITHUB</a>
+                                    </div>
+                                
+                                    <div class="drawer-navbar-item text-base flex flex-col justify-center items-start hover:underline active:underline hover:underline-offset-1 rounded-3xl">
+                                        <a class=" text-third-text-color text-xl"
+                                           href="/hewenxuan040923@gmail.com">EMAIL</a>
+                                    </div>
+                                
+                                    <div class="drawer-navbar-item text-base flex flex-col justify-center items-start hover:underline active:underline hover:underline-offset-1 rounded-3xl">
+                                        <a class=" text-third-text-color text-xl"
+                                           target="_blank" rel="noopener" href="https://steamcommunity.com/profiles/76561199532274174/">STEAM</a>
+                                    </div>
+                                
+                                    <div class="drawer-navbar-item text-base flex flex-col justify-center items-start hover:underline active:underline hover:underline-offset-1 rounded-3xl">
+                                        <a class=" text-third-text-color text-xl"
+                                           target="_blank" rel="noopener" href="https://www.zhihu.com/people/65-45-47-31-19">ZHIHU</a>
+                                    </div>
+                                
+                                    <div class="drawer-navbar-item text-base flex flex-col justify-center items-start hover:underline active:underline hover:underline-offset-1 rounded-3xl">
+                                        <a class=" text-third-text-color text-xl"
+                                           target="_blank" rel="noopener" href="https://blog.csdn.net/2301_80219407?spm=1000.2115.3001.5343">CSDN</a>
+                                    </div>
+                                
+                            </div>
+                        
+                    </li>
+            
+
+            
+            
+        </ul>
+
+        <div class="statistics flex justify-around my-2.5">
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/tags">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">7</div>
+        <div class="label text-third-text-color text-sm">标签</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/categories">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">0</div>
+        <div class="label text-third-text-color text-sm">分类</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">5</div>
+        <div class="label text-third-text-color text-sm">文章</div>
+    </a>
+</div>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+		</div>
+
+		<div class="main-content-body transition-fade-up">
+			
+
+			<div class="main-content">
+				<div class="post-page-container flex relative justify-between box-border w-full h-full">
+	<div class="article-content-container">
+
+		<div class="article-title relative w-full">
+			
+			<div class="w-full flex items-center pt-6 justify-start">
+				<h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3">如何从零开始学习使用yolo</h1>
+			</div>
+			
+		</div>
+
+		
+		<div class="article-header flex flex-row gap-2 items-center px-2 sm:px-6 md:px-8">
+			<div class="avatar w-[46px] h-[46px] flex-shrink-0 rounded-medium border border-border-color p-[1px]">
+				<img src="/images/my_mine_logo.webp">
+			</div>
+			<div class="info flex flex-col justify-between">
+				<div class="author flex items-center">
+					<span class="name text-default-text-color text-lg font-semibold">HeWenXuan</span>
+					
+					<span class="author-label ml-1.5 text-xs px-2 py-0.5 rounded-small text-third-text-color border border-shadow-color-1">Lv1</span>
+					
+				</div>
+				<div class="meta-info">
+					<div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="desktop">2026-02-16 16:02:28</span>
+        <span class="mobile">2026-02-16 16:02:28</span>
+        <span class="hover-info">创建</span>
+    </span>
+    
+        <span class="article-date article-meta-item">
+            <i class="fa-regular fa-wrench"></i>&nbsp;
+            <span class="desktop">2026-02-16 16:08:14</span>
+            <span class="mobile">2026-02-16 16:08:14</span>
+            <span class="hover-info">更新</span>
+        </span>
+    
+
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fa-regular fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/%E6%95%99%E7%A8%8B/">教程</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/yolo/">yolo</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/">计算机视觉</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>8.8k 字</span>
+        </span>
+    
+    
+        <span class="article-min2read article-meta-item">
+            <i class="fa-regular fa-clock"></i>&nbsp;<span>32 分钟</span>
+        </span>
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
+</div>
+
+				</div>
+			</div>
+		</div>
+		
+
+		
+
+
+		<div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
+			<h1 id="1-简述"><a href="#1-简述" class="headerlink" title="1. 简述"></a>1. 简述</h1><p>本文档主要记录了如何从零开始学习使用yolo，包括环境搭建、模型训练和推理等内容。<br>yolo主要用于目标检测任务，旋转目标检测，姿态估计，实例分割，图像分类等任务。要做这些任务，就得有对应的模型，而训练模型需要有数据集，数据集的准备和标注是一个比较繁琐的过程，本文档也会介绍一些常用的数据集和标注工具。</p>
+<h1 id="2-环境"><a href="#2-环境" class="headerlink" title="2. 环境"></a>2. 环境</h1><p><strong>2.1 操作系统</strong> 笔者使用的是Ubuntu 24.04.3，windows环境下差别不大，按照本文步骤下载对应的安装包或资料即可，需要特殊处理的地方会在文中注明。</p>
+<p><strong>2.2 显卡</strong> 笔者显卡为GeForce RTX 4060。本文只涉及nvidia显卡如果是A卡请移步相关文档或使用下述提到的CPU训练。ubuntu下可使用<code>nvdia-smi</code>命令查看显卡型号和驱动版本，windows下可以在设备管理器中查看显卡型号，建议使用至少6GB显存的显卡，yolo模型训练需要较大的显存，建议至少4GB以上。不过也有纯CPU训练的版本，两者仅速度差距较大，CPU训练可能需要几倍甚至几十倍的时间。</p>
+<p><strong>2.3 内存</strong> 笔者的是32G内存，yolo模型训练需要较大的内存，建议至少16G以上。</p>
+<p>如果上述环境条件均不满足或有较大差距，可以尝试使用云服务进行训练或抓紧买个新电脑吧。</p>
+<h1 id="3-相关概念介绍"><a href="#3-相关概念介绍" class="headerlink" title="3. 相关概念介绍"></a>3. 相关概念介绍</h1><h2 id="3-1-YOLO版本选择"><a href="#3-1-YOLO版本选择" class="headerlink" title="3.1 YOLO版本选择"></a>3.1 YOLO版本选择</h2><p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.jsdelivr.net/gh/mouxuanjun/cloud-img/blog/%E6%88%AA%E5%9B%BE%202026-02-13%2013-05-34.png"
+                     
+                ></p>
+<blockquote>
+<p>图片来源于BilbilUp主@林亿饼</p>
+</blockquote>
+<p>YOLO截止目前已经出到YOLOv12(2026.2.13)，其中YOLO8和YOLO11是比较常用的版本。从图中可以明显看出，YOLO主打目标检测，然后YOLOv11和YOLOv8可以完成所有任务，故建议初学者直接学习YOLOv8或YOLOv11，后续如果需要使用其他版本。本文将以YOLOv11为例进行讲解。</p>
+<h2 id="3-2-训练和推理"><a href="#3-2-训练和推理" class="headerlink" title="3.2 训练和推理"></a>3.2 训练和推理</h2><p>训练和推理是两个不同的概念，训练是指使用数据集对模型进行训练，使模型能够学习到数据中的特征和规律，最终得到一个能够对新数据进行预测的模型。而推理是指使用训练好的模型对新数据进行预测，比如输入一张图片，模型会输出图片中目标的位置和类别等信息。说人话就是训练是得到模型，推理是使用模型。</p>
+<h2 id="3-3-数据集"><a href="#3-3-数据集" class="headerlink" title="3.3 数据集"></a>3.3 数据集</h2><p>你只要知道自己要预测的目标，然后找到对应的数据集就行了，常用的数据集有COCO、VOC、ImageNet等，这些数据集都包含了大量的图片和对应的标注信息，可以用于训练和评估模型。但是，如果没有人做过你要的数据集，你也可以自己收集数据并进行标注，供模型使用。</p>
+<h1 id="4-环境配置"><a href="#4-环境配置" class="headerlink" title="4. 环境配置"></a>4. 环境配置</h1><h2 id="4-1-安装python环境"><a href="#4-1-安装python环境" class="headerlink" title="4.1 安装python环境"></a>4.1 安装python环境</h2><p>ubuntu自带python环境，windows需要自行安装python，浏览器直接搜索下载即可，建议使用python3.8以上版本，安装完成后可以使用<code>python --version</code>命令查看python版本。</p>
+<h2 id="4-2-安装anconda"><a href="#4-2-安装anconda" class="headerlink" title="4.2 安装anconda"></a>4.2 安装anconda</h2><h3 id="4-2-1-anconda简介"><a href="#4-2-1-anconda简介" class="headerlink" title="4.2.1 anconda简介"></a>4.2.1 anconda简介</h3><p>anconda是一个非常好用的python环境管理工具，可以帮助我们创建和管理不同的python环境。初学者可能不知道什么是python环境，简单来说就是一个独立的空间，可以安装不同版本的python和不同的库，互不干扰。比如我有两个项目，一个需要python3.8，另一个需要python3.10，且两者需要的包版本不同，如果不使用环境管理工具，就会很麻烦，使用anconda就可以轻松解决这个问题。</p>
+<h3 id="4-2-2-anconda安装"><a href="#4-2-2-anconda安装" class="headerlink" title="4.2.2 anconda安装"></a>4.2.2 anconda安装</h3><p>下载方法可以直接进入<a class="link"   target="_blank" rel="noopener" href="https://www.anaconda.com/download" >anconda官网<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>，选择对应的操作系统版本下载即可，但是要求登陆，其实不麻烦，因为可以跳过(doge)。或者国内最好从<a class="link"   target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/" >清华源<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>进行下载。下载完成后按照提示安装即可，安装过程中可以选择添加anconda到环境变量，这样就可以在命令行中直接使用conda命令了。使用<code>conda --version</code>命令就可以查看conda版本，有输出则说明安装成功。</p>
+<h3 id="4-2-3-anconda使用"><a href="#4-2-3-anconda使用" class="headerlink" title="4.2.3 anconda使用"></a>4.2.3 anconda使用</h3><p>下面是一些基础的anconda命令：</p>
+<ul>
+<li><code>conda create -n myenv python=3.11</code> 创建一个名为myenv的python3.11环境</li>
+<li><code>conda activate myenv</code> 激活myenv环境</li>
+<li><code>conda deactivate</code> 退出当前环境</li>
+<li><code>conda env list</code> 查看所有环境</li>
+<li><code>conda remove -n yoloenv --all</code> 删除yoloenv环境</li>
+<li><code>conda install package_name</code> 安装包，比如<code>conda install numpy</code>安装numpy包,此时使用pip安装也可以，<code>pip install package_name</code>，不过建议使用conda安装包，因为conda会自动解决依赖问题，而pip可能会出现依赖冲突的问题。</li>
+</ul>
+<h3 id="4-2-4-创建yolo环境"><a href="#4-2-4-创建yolo环境" class="headerlink" title="4.2.4 创建yolo环境"></a>4.2.4 创建yolo环境</h3><p>对于此次yolo项目，我们运行如下命令创建一个yolo环境：</p>
+<div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">conda create -n yoloenv python=3.11</span><br><span class="line">conda activate yoloenv</span><br></pre></td></tr></table></figure></div>
+<p>此时前面的<code>(base)</code>变为<code>(yoloenv)</code>，说明已经成功激活了yoloenv环境。</p>
+<blockquote>
+<p>注意，本文后续安装包的命令都是在yoloenv环境下执行的，如果没有激活环境，可能会出现找不到命令或包的错误。</p>
+</blockquote>
+<h2 id="4-3-安装pytorch"><a href="#4-3-安装pytorch" class="headerlink" title="4.3 安装pytorch"></a>4.3 安装pytorch</h2><p>先根据电脑显卡硬件选择正确的pytorch版本，可对照下表查询自己需要的版本：</p>
+<table>
+<thead>
+<tr>
+<th align="center">显卡</th>
+<th align="center">PyTorch版本</th>
+<th align="center">备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">50系英伟达</td>
+<td align="center">最新+CUDA12.8</td>
+<td align="center">只能装这个</td>
+</tr>
+<tr>
+<td align="center">非50系英伟达</td>
+<td align="center">2.5.0+CUDA11.8</td>
+<td align="center">CUDA版本低于电脑驱动CUDA版本都能用</td>
+</tr>
+<tr>
+<td align="center">不带NVIDIA显卡</td>
+<td align="center">2.5.0+CPU</td>
+<td align="center">当初买错电脑了</td>
+</tr>
+</tbody></table>
+<p>下面将以NVIDIA非50系显卡为例，安装pytorch2.5.0+CUDA11.8版本，其他版本的安装方法类似，直接替换版本号即可：</p>
+<h3 id="4-3-1-检查驱动"><a href="#4-3-1-检查驱动" class="headerlink" title="4.3.1 检查驱动"></a>4.3.1 检查驱动</h3><p>首先在命令行中输入<code>nvidia-smi</code>命令查看显卡型号和驱动版本，确认此时的CUDA版本大于等于11.8，否则需要更新nvidia驱动，更新驱动不再赘述。</p>
+<h3 id="4-3-2-进入pytorch官网找安装命令"><a href="#4-3-2-进入pytorch官网找安装命令" class="headerlink" title="4.3.2 进入pytorch官网找安装命令"></a>4.3.2 进入pytorch官网找安装命令</h3><p>进入pytorch官网的<a class="link"   target="_blank" rel="noopener" href="https://pytorch.org/get-started/previous-versions/" >安装页面<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>，搜索索引到2.5.0版本，选择对应的操作系统、包管理器、python版本和CUDA版本，官网会自动生成安装命令，比如对于ubuntu系统，使用conda包管理器，python3.11，CUDA11.8的安装命令如下：</p>
+<div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">conda install pytorch==2.5.0 torchvision==0.20.0</span><br><span class="line">torchaudio==2.5.0 pytorch-cuda=12.4 -c pytorch -c nvidia</span><br></pre></td></tr></table></figure></div>
+<h3 id="4-3-3-执行安装命令"><a href="#4-3-3-执行安装命令" class="headerlink" title="4.3.3 执行安装命令"></a>4.3.3 执行安装命令</h3><p>复制命令到命令行中执行，不过安装过程可能超级超级慢，要么你可以选择耐心等待，或着更聪明的做法是使用国内镜像源进行安装，清华真是太厉害了(doge),下面是切换到清华源的命令：<code>pip config set global.index-url https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple</code>，如果还是慢，可以试试连上手机热点再尝试安装。</p>
+<h3 id="4-3-4-验证安装"><a href="#4-3-4-验证安装" class="headerlink" title="4.3.4 验证安装"></a>4.3.4 验证安装</h3><p>验证安装是否成功，可以在python环境中输入以下代码,如果输出为True，则说明pytorch安装成功并且可以使用CUDA进行加速了。：</p>
+<div class="code-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"><span class="built_in">print</span>(torch.cuda.is_available())</span><br></pre></td></tr></table></figure></div>
+<h2 id="4-4-下载YOLO源码"><a href="#4-4-下载YOLO源码" class="headerlink" title="4.4 下载YOLO源码"></a>4.4 下载YOLO源码</h2><h3 id="4-4-1-拉取源码"><a href="#4-4-1-拉取源码" class="headerlink" title="4.4.1 拉取源码"></a>4.4.1 拉取源码</h3><p>去到全球最大同性交友网站GitHub上搜索ultralytics，或直接进入<a class="link"   target="_blank" rel="noopener" href="https://github.com/ultralytics/ultralytics" >YOLO仓库<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>,找对应版本，可以使用8.3.163版本，直接下载zip包解压到本地，或者使用git命令克隆仓库到本地：</p>
+<div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> -b 8.3.163 git@github.com:ultralytics/ultralytics.git</span><br></pre></td></tr></table></figure></div>
+<h3 id="4-4-2-下载官方模型"><a href="#4-4-2-下载官方模型" class="headerlink" title="4.4.2 下载官方模型"></a>4.4.2 下载官方模型</h3><p>去到<a class="link"   target="_blank" rel="noopener" href="https://github.com/ultralytics/assets/releases" >对应网站<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>,找到V8.3.0下面的assets，其中有几百个官方欲训练好的模型，用ctrl+f搜索<code>yolo11n</code>， 下载yolo11n.pt模型文件，下载完成后放到YOLO源码的根目录下，后续训练和推理时会用到这个模型文件。，建议初学时可以下载所有yolo11n-xx.pt模型文件</p>
+<h3 id="4-4-3-源码文件夹"><a href="#4-4-3-源码文件夹" class="headerlink" title="4.4.3 源码文件夹"></a>4.4.3 源码文件夹</h3><p>找到4.1中下载的yolo源码文件夹，将下载的模型文件移动到该文件夹下，文件准备工作就全部结束了</p>
+<h3 id="4-4-4-下载剩余文件"><a href="#4-4-4-下载剩余文件" class="headerlink" title="4.4.4 下载剩余文件"></a>4.4.4 下载剩余文件</h3><p>在yolo源码文件夹下，先激活yoloenv环境，然后执行以下命令安装剩余的依赖包：</p>
+<div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install -e .</span><br></pre></td></tr></table></figure></div>
+<p>此时所有的环境就已准备就绪了</p>
+<h2 id="4-5-下载IDE"><a href="#4-5-下载IDE" class="headerlink" title="4.5 下载IDE"></a>4.5 下载IDE</h2><p>对于python开发来说，纯命令行的开发可能帅，但是很傻，故绝大多数时候都需要下载一个IDE，一个好的IDE不仅能帮你补全代码，还能图形化的帮你调试代码，管理环境，大大提高开发效率。一般来说常用的两个IDE是Pycharm和宇宙最强IDEVsCode，这两个无需过多介绍,下载和安装直接去官网找对应安装包即可，Pycharm建议进行教育认证后使用专业版，功能更强大，VsCode则是完全免费的，功能也非常强大。两者区别没有特别大，凭个人爱好选择即可。</p>
+<h1 id="5-调用官方模型进行推理"><a href="#5-调用官方模型进行推理" class="headerlink" title="5. 调用官方模型进行推理"></a>5. 调用官方模型进行推理</h1><p>在IDE中(本文教学以Pycharm为例)，打开yolo源码文件夹</p>
+<h2 id="5-1-查看官方图片示例"><a href="#5-1-查看官方图片示例" class="headerlink" title="5.1 查看官方图片示例"></a>5.1 查看官方图片示例</h2><p>新建一个Python文件，然后输入以下代码，运行后会在当前目录下生成一个runs文件夹，里面有一个detect文件夹，该文件夹中就存放了官方提供的测试图片的运行结果，里面有一些目标检测的结果，可以看到模型已经成功地对图片中的目标进行了检测，并且标注了类别和置信度。(原图就位于<code>ultralytics/assets/bus.jpg</code>路径下)</p>
+<div class="code-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> ultralytics <span class="keyword">import</span> YOLO</span><br><span class="line">model = YOLO(<span class="string">r&#x27;yolo11n.pt&#x27;</span>)</span><br><span class="line">model.predict(</span><br><span class="line">    source=<span class="string">r&quot;ultralytics/assets&quot;</span>,</span><br><span class="line">    save=<span class="literal">True</span>,</span><br><span class="line">    show=<span class="literal">False</span>,</span><br><span class="line">)</span><br></pre></td></tr></table></figure></div>
+<p>运行结果如下：<br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.jsdelivr.net/gh/mouxuanjun/cloud-img/blog/bus.jpg"
+                     
+                ></p>
+<h2 id="5-2-摄像头推理"><a href="#5-2-摄像头推理" class="headerlink" title="5.2 摄像头推理"></a>5.2 摄像头推理</h2><p>在上面的代码基础上，将source参数改为0，并将save改为False，show改为True。即可使用摄像头进行推理，运行后会弹出一个窗口，显示摄像头的画面，并且对画面中的目标进行检测和标注，按q键可以退出窗口。但是你会注意到，随着时间的推移，窗口会越来越卡，甚至会崩溃，这是因为每次循环都会调用model.predict方法进行推理，而该方法会不断地占用内存，导致内存泄漏，最终导致程序崩溃。为了解决这个问题，我们需要使用stream参数来进行流式推理，这样就不会占用过多的内存了，并且使用opencv控制输出。下面是修改后的代码：</p>
+<div class="code-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> ultralytics <span class="keyword">import</span> YOLO</span><br><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line"></span><br><span class="line">model = YOLO(<span class="string">r&#x27;yolo11n-pose.pt&#x27;</span>)</span><br><span class="line"></span><br><span class="line">results = model(</span><br><span class="line">    source=<span class="number">0</span>,</span><br><span class="line">    stream=<span class="literal">True</span>,</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> result <span class="keyword">in</span> results:</span><br><span class="line">    plotted = result.plot()</span><br><span class="line">    cv2.imshow(<span class="string">&quot;Camera&quot;</span>, plotted)</span><br><span class="line">    <span class="keyword">if</span> cv2.waitKey(<span class="number">1</span>) &amp; <span class="number">0xFF</span> == <span class="built_in">ord</span>(<span class="string">&#x27;q&#x27;</span>):</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line">cv2.destroyAllWindows()</span><br></pre></td></tr></table></figure></div>
+<blockquote>
+<p>注意:此时需要安装opencv库，安装命令为<code>conda install opencv</code>，opencv很大，安装可能持续5,6min，安装完成后再次运行上述代码即可。</p>
+</blockquote>
+<h1 id="6-训练"><a href="#6-训练" class="headerlink" title="6.训练"></a>6.训练</h1><h2 id="6-1-coco8数据集对YOLO11n模型进行训练"><a href="#6-1-coco8数据集对YOLO11n模型进行训练" class="headerlink" title="6.1 coco8数据集对YOLO11n模型进行训练"></a>6.1 coco8数据集对YOLO11n模型进行训练</h2><p>新建一个<code>train.py</code>文件，输入以下代码，点击运行后就会自动从网上下载coc8数据集，并且使用yolo11n.pt模型进行训练</p>
+<div class="code-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> ultralytics <span class="keyword">import</span> YOLO</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    model = YOLO(<span class="string">r&#x27;yolo11m.pt&#x27;</span>)</span><br><span class="line">    model.train(</span><br><span class="line">        data=<span class="string">r&#x27;coco8.yaml&#x27;</span>,</span><br><span class="line">        epochs=<span class="number">100</span>,</span><br><span class="line">        imgsz=<span class="number">640</span>,</span><br><span class="line">        batch=-<span class="number">1</span>,</span><br><span class="line">        cache=<span class="string">&#x27;ram&#x27;</span>,</span><br><span class="line">        workers=<span class="number">1</span>,</span><br><span class="line">    )</span><br></pre></td></tr></table></figure></div>
+<p>需要注意的是，第一次训练很可能失败，原因大概率就是下载数据集失败了，报错信息中有一行如下：<code>Downloading https://ultralytics.com/assets/coco8.zip to xxx</code>，以直接在浏览器中打开前面的链接，手动添加到后续的xxx路径下即可，<strong>不需要解压缩</strong>。然后在进行训练就可以在<code>runs/train</code>路径下看到训练出来的模型文件了，训练过程中会输出一些日志信息，包括训练的轮数、损失值、精度等指标，可以通过这些信息来判断模型的训练情况。但是初学者一般看不懂这些指标的含义，建议先不关注这些指标，等后续对模型有了一定的了解后再来学习这些指标的含义和作用。训练完成后会在<code>runs/train/weights</code>路径下生成一个best.pt文件，这个文件就是训练好的模型文件，可以用来进行推理了。</p>
+<blockquote>
+<p>上述只提到了一个训练的例子，即最简单的coco8数据集，可以自行尝试其他数据集和其他模型的训练，训练方法基本相同。</p>
+</blockquote>
+<h2 id="6-2-数据集查看"><a href="#6-2-数据集查看" class="headerlink" title="6.2 数据集查看"></a>6.2 数据集查看</h2><h3 id="6-2-1-安装labelimg标注工具"><a href="#6-2-1-安装labelimg标注工具" class="headerlink" title="6.2.1 安装labelimg标注工具"></a>6.2.1 安装labelimg标注工具</h3><p>由于上述安装的python是3.11版本，与本次使用的labelimg标注工具不兼容，所以需要安装一个python3.8版本的环境来使用labelimg，安装方法同4.2.4中创建yoloenv环境的方法，命令如下：</p>
+<div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mamba create -n labelimgenv python=3.8</span><br><span class="line">conda activate labelimgenv</span><br><span class="line">mamba install labelimg</span><br></pre></td></tr></table></figure></div>
+<h3 id="6-2-2-创建classes-txt文件"><a href="#6-2-2-创建classes-txt文件" class="headerlink" title="6.2.2 创建classes.txt文件"></a>6.2.2 创建classes.txt文件</h3><p>还是以coco8为例，找到数据集图片，数据集标签,然后在数据集标签文件夹里面新建一个名为<code>classes.txt</code>的文件，其中存放了数据集中所有类别的名称，每行一个类别，顺序要和数据集标签文件中的类别编号一致，比如coco8数据集中有80个类别，那么classes.txt文件中就应该有80行，每行对应一个类别的名称，具体的类别名称可以在coco8.yaml文件中找到。复制过来即可，后续在使用labelimg进行标注时会用到这个文件。</p>
+<h3 id="6-2-3-使用labelimg查看coco8数据集"><a href="#6-2-3-使用labelimg查看coco8数据集" class="headerlink" title="6.2.3 使用labelimg查看coco8数据集"></a>6.2.3 使用labelimg查看coco8数据集</h3><p>记住上述三个内容的路径，打开命令行，输入以下命令：</p>
+<div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">conda activate labelimgenv</span><br><span class="line">labelimg xxx yyy zzz</span><br></pre></td></tr></table></figure></div>
+<p>其中xxx是数据集图片的路径，yyy是classes.txt的路径，zzz是数据集标签的路径。中间用空格隔开，输入完成后按回车键，就会打开labelimg工具，并且自动加载数据集图片和标签了，可以在工具中查看数据集的图片和标签了。</p>
+<h2 id="6-3-加速训练"><a href="#6-3-加速训练" class="headerlink" title="6.3 加速训练"></a>6.3 加速训练</h2><p>训练效率仅能反映训练的快慢，对最终的训练结果没有影响，一个高效的训练一般具有以下特征：</p>
+<ul>
+<li>CUDA利用率有高又稳</li>
+<li>所有资源利用率都不到100%<br>要提高训练效率，需要从cpu、显卡、内存等多个方面进行优化，下面是一些常用的优化方法：</li>
+</ul>
+<h3 id="6-3-1-调整imgsz大小"><a href="#6-3-1-调整imgsz大小" class="headerlink" title="6.3.1 调整imgsz大小"></a>6.3.1 调整imgsz大小</h3><p>一次训练时，需要先将图片在保持原长宽比不变的前提下缩放到指定的大小，然后再统一投喂。默认是640x640，如果显卡显存较小，可以将imgsz适当调小，这样就可以减少每次训练时占用的显存了，从而提高训练效率。注意的是imgsz必须是32的倍数，否则会报错。需要注意的是，此参数不仅会影响训练效率，还会影响训练结果，过大的imgsz严重影响训练效率，过小的imgsz可能会导致模型无法学习到足够的特征，从而导致训练结果不理想，所以需要根据实际情况进行调整。举个最简单的例子，如果你把一张图片压缩到1&#x2F;10,那么实际图片已经变成一堆马赛克了，训练出来的模型也就只能帮你预测一些马赛克了，遇到正常的图片就完全不行了。放大也是同理。但是一般默认即可，除非原本数据集就过大就过小。</p>
+<h3 id="6-3-2-调整batch大小"><a href="#6-3-2-调整batch大小" class="headerlink" title="6.3.2 调整batch大小"></a>6.3.2 调整batch大小</h3><p>batch大小指的是每次训练时投喂多少张图片，默认是16。如果样本较大，或者显卡现存较小，无法一次性投喂全部图片，故需要对样本进行分批，适当调小batch大小，这样就可以减少每次训练时占用的显存了，从而提高训练效率。如果一开始不知道要设置为多少，可以先设置为-1,此时在训练前会多一个autobatch环节，可以自动为你找到合适的batch大小。</p>
+<h3 id="6-3-3-使用缓存"><a href="#6-3-3-使用缓存" class="headerlink" title="6.3.3 使用缓存"></a>6.3.3 使用缓存</h3><p>把<code>cache=False</code>改为<code>cache=&#39;ram&#39;</code>，这样YOLO就会在训练开始前把所有数据加载到内存中，再全部缩放好，随后等到对应批次时直接投喂给模型就行，唯一缺点就是占用内存较大，如果内存较小，可能会导致系统崩溃，所以需要根据实际情况进行调整。一般在数据集尺寸较大时使用缓存可以大大提高训练效率。</p>
+<h3 id="6-3-4-调整workers数量"><a href="#6-3-4-调整workers数量" class="headerlink" title="6.3.4 调整workers数量"></a>6.3.4 调整workers数量</h3><p>由于打包是随机的，故没有办法提前打包，打包本身也需要一定时间，如果打包慢了也会影响投喂，解决方法就是多开几个线程来负责打包。<br>但是同样的，过多的线程也会占用过多的系统资源，一般建议选择一个较小的值。</p>
+<h3 id="6-3-5-优化源码"><a href="#6-3-5-优化源码" class="headerlink" title="6.3.5 优化源码"></a>6.3.5 优化源码</h3><p>YOLO是基于python编写的，故如果你本身编程语言能力较强，可以尝试优化源码来提高训练效率，但是笔者在此方面是菜鸡，所以不敢妄言，如果有巨佬能提供一些优化建议，欢迎在评论区留言。或者是优化Pytorch和CUDA，那就更牛逼了，如果你还不满足，可以直接修改nvidia驱动或直接硬件魔改显卡，相信你自己。</p>
+<h1 id="7-训练一个自己的模型"><a href="#7-训练一个自己的模型" class="headerlink" title="7. 训练一个自己的模型"></a>7. 训练一个自己的模型</h1><h2 id="7-1-数据集准备"><a href="#7-1-数据集准备" class="headerlink" title="7.1 数据集准备"></a>7.1 数据集准备</h2><p>在弄明白自己要预测的目标后，你可以先找找网上有没有对应的数据集，如果有的话就直接下载使用，如果没有的话就需要自己收集数据并进行标注了，数据集的准备和标注是一个比较繁琐的过程。</p>
+<h3 id="7-1-1-去网上找现成的数据集"><a href="#7-1-1-去网上找现成的数据集" class="headerlink" title="7.1.1 去网上找现成的数据集"></a>7.1.1 去网上找现成的数据集</h3><p>可以直接在搜索引擎中搜索你要预测的目标+数据集，或者现在直接使用AI帮你查找，关键词为：预测目标+任务类型+YOLO模型，AI给出来的多数内容无法直接使用，但是它会推荐一些比较出名的数据集就算无法直接使用也可以尝试搜索AI给出的结果，说不定能有意想不到的惊喜。推荐两个网站，我也是在网上看别人推荐的，请自行筛选：<a class="link"   target="_blank" rel="noopener" href="https://universe.roboflow.com/" >roboflow<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>和<a class="link"   target="_blank" rel="noopener" href="https://www.kaggle.com/datasets" >kaggle<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>,如果找到你需要的数据集，那么恭喜你了，最折磨人的标数据集部分你就可以跳过了。直接看<code>7.1.2</code>即可。</p>
+<h3 id="7-1-2-现成数据集使用"><a href="#7-1-2-现成数据集使用" class="headerlink" title="7.1.2 现成数据集使用"></a>7.1.2 现成数据集使用</h3><p>当你找到正确格式的数据集后，下载其对应的ZIP，建议统一放到源码里的<code>datasets</code>文件夹下，然后把数据集自带的xx.yaml文件复制到<code>ultralytics/cfg</code>文件夹下，然后查看以下内容是否正确：</p>
+<ul>
+<li><strong>path</strong> 指向数据集所在地址</li>
+<li><strong>train</strong> 指向数据训练集地址</li>
+<li><strong>val</strong> 指向数据验证集地址</li>
+<li><strong>test</strong> 指向数据测试集地址(可以没有测试集)</li>
+<li><strong>names</strong> 指明对应数据集标签的名称，顺序不可更改！！！     </li>
+<li>其他都无所谓了<br>数据集准备部分你就到此为之了，接下来直接跳到训练部分即可。</li>
+</ul>
+<h3 id="7-1-3-自己拍摄数据集"><a href="#7-1-3-自己拍摄数据集" class="headerlink" title="7.1.3 自己拍摄数据集"></a>7.1.3 自己拍摄数据集</h3><p>如果你是比较悲惨的那批人，网上没有现成好的开源数据集，例如参加一些大学生竞赛的队员，多数情况都需要你自己来制作自己的数据集，关于材料准备可以尝试以下方法：先随机在不同环境和灯光环境下给目标的各个姿态拍摄几段视频，然后从视频中随机提取n张图片。这里分享一个可以自动完成此过程的脚本：</p>
+<div class="code-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">from</span> pathlib <span class="keyword">import</span> Path</span><br><span class="line"><span class="keyword">from</span> tqdm <span class="keyword">import</span> tqdm</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">extract_frames</span>(<span class="params">frames_per_second=<span class="number">2</span></span>):</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 1. 定义路径</span></span><br><span class="line">    base_dir = os.path.dirname(os.path.abspath(__file__))</span><br><span class="line">    video_dir = os.path.join(base_dir, <span class="string">&quot;videos&quot;</span>)</span><br><span class="line">    output_dir = os.path.join(base_dir, <span class="string">&quot;images&quot;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 2. 检查并创建输出目录</span></span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> os.path.exists(output_dir):</span><br><span class="line">        os.makedirs(output_dir)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&quot;已创建输出文件夹: <span class="subst">&#123;output_dir&#125;</span>&quot;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 3. 获取所有 .mp4 文件</span></span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> os.path.exists(video_dir):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&quot;错误: 找不到视频文件夹 <span class="subst">&#123;video_dir&#125;</span>&quot;</span>)</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line"></span><br><span class="line">    video_files = [f <span class="keyword">for</span> f <span class="keyword">in</span> os.listdir(video_dir) <span class="keyword">if</span> f.lower().endswith(<span class="string">&#x27;.mp4&#x27;</span>)]</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> video_files:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;在 videos 文件夹下没有找到 .mp4 文件。&quot;</span>)</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line"></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">f&quot;找到 <span class="subst">&#123;<span class="built_in">len</span>(video_files)&#125;</span> 个视频文件，准备开始处理...&quot;</span>)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">f&quot;提取频率: 每秒 <span class="subst">&#123;frames_per_second&#125;</span> 帧&quot;</span>)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;-&quot;</span> * <span class="number">30</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 4. 遍历处理每个视频</span></span><br><span class="line">    <span class="keyword">for</span> video_file <span class="keyword">in</span> video_files:</span><br><span class="line">        video_path = os.path.join(video_dir, video_file)</span><br><span class="line">        video_name_stem = Path(video_file).stem</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 打开视频</span></span><br><span class="line">        cap = cv2.VideoCapture(video_path)</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> cap.isOpened():</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">f&quot;无法打开视频: <span class="subst">&#123;video_file&#125;</span>&quot;</span>)</span><br><span class="line">            <span class="keyword">continue</span></span><br><span class="line"></span><br><span class="line">        <span class="comment"># 获取视频信息</span></span><br><span class="line">        original_fps = cap.get(cv2.CAP_PROP_FPS)</span><br><span class="line">        total_frames = <span class="built_in">int</span>(cap.get(cv2.CAP_PROP_FRAME_COUNT))</span><br><span class="line">        <span class="keyword">if</span> frames_per_second &gt; original_fps:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">f&quot;警告: 目标帧率 (<span class="subst">&#123;frames_per_second&#125;</span>) 高于视频原始帧率 (<span class="subst">&#123;original_fps&#125;</span>)，将提取所有帧。&quot;</span>)</span><br><span class="line">            frame_interval = <span class="number">1</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            frame_interval = <span class="built_in">int</span>(original_fps / frames_per_second)</span><br><span class="line">            <span class="keyword">if</span> frame_interval == <span class="number">0</span>: frame_interval = <span class="number">1</span></span><br><span class="line"></span><br><span class="line">        <span class="comment"># 设置进度条</span></span><br><span class="line">        pbar = tqdm(total=total_frames, desc=<span class="string">f&quot;处理 <span class="subst">&#123;video_file&#125;</span>&quot;</span>, unit=<span class="string">&quot;帧&quot;</span>)</span><br><span class="line"></span><br><span class="line">        frame_count = <span class="number">0</span></span><br><span class="line">        saved_count = <span class="number">1</span>  <span class="comment"># 图片序号从1开始</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">            success, frame = cap.read()</span><br><span class="line"></span><br><span class="line">            <span class="keyword">if</span> <span class="keyword">not</span> success:</span><br><span class="line">                <span class="keyword">break</span></span><br><span class="line"></span><br><span class="line">            <span class="comment"># 判断是否需要保存当前帧</span></span><br><span class="line">            <span class="keyword">if</span> frame_count % frame_interval == <span class="number">0</span>:</span><br><span class="line">                <span class="comment"># 构造图片文件名: xxx_yyyy.jpg (yyyy 为4位数字，如 0001)</span></span><br><span class="line">                output_filename = <span class="string">f&quot;<span class="subst">&#123;video_name_stem&#125;</span>_<span class="subst">&#123;saved_count:04d&#125;</span>.jpg&quot;</span></span><br><span class="line">                output_path = os.path.join(output_dir, output_filename)</span><br><span class="line"></span><br><span class="line">                <span class="comment"># 保存图片</span></span><br><span class="line">                cv2.imwrite(output_path, frame)</span><br><span class="line">                saved_count += <span class="number">1</span></span><br><span class="line"></span><br><span class="line">            frame_count += <span class="number">1</span></span><br><span class="line">            pbar.update(<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">        cap.release()</span><br><span class="line">        pbar.close()</span><br><span class="line"></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;-&quot;</span> * <span class="number">30</span>)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;所有视频处理完成！&quot;</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">    <span class="comment"># --- 配置区域 ---</span></span><br><span class="line">    <span class="comment"># 在这里修改每秒你想提取几帧</span></span><br><span class="line">    TARGET_FPS = <span class="number">3</span></span><br><span class="line">    <span class="comment"># ----------------</span></span><br><span class="line"></span><br><span class="line">    extract_frames(frames_per_second=TARGET_FPS)</span><br></pre></td></tr></table></figure></div>
+<blockquote>
+<p>使用该脚本前需保证文件路径下有 <code>videos</code> 文件夹，其中存放视频格式为<code>.mp4</code>.点击运行则会把全部输出的图片按统一格式存放到<code>images</code>文件夹中，如果数量过多或过少，可以适当调整其中的参数。<br>眼尖的同学就会发现改脚本完全由AI编写，对于这种简单小功能直接让AI来写还是非常方便和快捷的，后续类似的功能就不再直接给代码了，大家各自拷打自己的AI让它写出能用的代码即可。</p>
+</blockquote>
+<h3 id="7-1-4-数据集标注"><a href="#7-1-4-数据集标注" class="headerlink" title="7.1.4 数据集标注"></a>7.1.4 数据集标注</h3><p>数据集准备好了之后就需要进行标注了，标注的工具有很多，比如labelimg、labelme、xlabeling等，初学者可以尝试使用labelimg，安装方法和打开方法上述有提到。具体步骤如下：</p>
+<ol>
+<li>新建一个<code>labels</code>文件夹，用于存放标注文件</li>
+<li>在<code>labels</code>文件夹中新建一个<code>classes.txt</code>文件用于存放类别名称，根据需要一行一个类别，顺序要和数据集标签文件中的类别编号一致，尽量使用英文名称且尽可能不发生歧义的情况下短小一点。</li>
+<li>按<code>6.2.3</code>中教学的方法打开labelimg工具，加载数据集图片和标签。</li>
+<li>标注前注意标签格式是否为YOLO，如果是的话就可以开始愉快的标数据集了。<code>A``D</code>可以快速切换图片，<code>W</code>快速创建新的框，框定好后选择对应的标签即可。</li>
+<li>标完一张图片记得保存，以此类推，直到全部标注完成。标</li>
+</ol>
+<h3 id="7-1-5-快速标注方法"><a href="#7-1-5-快速标注方法" class="headerlink" title="7.1.5 快速标注方法"></a>7.1.5 快速标注方法</h3><p>例如有100张图片，一张一张的标注可能会比较麻烦，这时就会想到一个办法，先提取其中一部分图片，比如20张，进行标注，然后使用这20张图片训练一个模型，随后使用这个模型对剩余的80张图片进行推理，得到的结果可能不太准确，但可以作为一个初始的标注结果，接下来只需要对这些结果进行修改和完善即可，这样就可以大大减少标注的工作量了。这个方法虽然有点麻烦，但是对于一些比较大的数据集来说是非常有用的，可以大大提高标注效率。至于怎么挑选图片就不必多说了，大家各自拷打自己的AI让它写出能用的代码即可。注意在使用小模型的时候，要把<code>save_txt</code>改为<code>True</code>。</p>
+<h3 id="7-1-6-数据集归类"><a href="#7-1-6-数据集归类" class="headerlink" title="7.1.6 数据集归类"></a>7.1.6 数据集归类</h3><p>当你准备好了数据集，并且标注好了之后，就需要把数据集按照一定的格式进行归类了，YOLO要求的数据集格式如下：</p>
+<div class="code-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">├── images/</span><br><span class="line">│   ├── train/</span><br><span class="line">│   ├── val/</span><br><span class="line">│   └── test/</span><br><span class="line">└── labels/</span><br><span class="line">    ├── train/</span><br><span class="line">    ├── val/</span><br><span class="line">    └── test/</span><br></pre></td></tr></table></figure></div>
+<p>其中<code>images</code>文件夹下存放图片，<code>labels</code>文件夹下存放对应的标签文件，<code>train</code>、<code>val</code>、<code>test</code>分别存放训练集、验证集和测试集的图片和标签，注意图片和标签的文件名要保持一致。此过程还是可以用AI编写脚本完成，请自行鞭策AI。</p>
+<h3 id="7-1-7-数据集yaml文件"><a href="#7-1-7-数据集yaml文件" class="headerlink" title="7.1.7 数据集yaml文件"></a>7.1.7 数据集yaml文件</h3><p>数据集准备好了之后就需要创建一个yaml文件来描述数据集了，yaml文件的内容主要包括数据集的路径、类别名称等信息，YOLO会根据这个yaml文件来加载数据集进行训练和推理，yaml文件的格式如下：</p>
+<div class="code-container" data-rel="Yaml"><figure class="iseeu highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">path:</span> <span class="string">../dataset</span></span><br><span class="line"><span class="attr">train:</span> <span class="string">images/train</span></span><br><span class="line"><span class="attr">val:</span> <span class="string">images/val</span></span><br><span class="line"><span class="attr">test:</span> <span class="string">images/test</span></span><br><span class="line"><span class="attr">names:</span></span><br><span class="line">  <span class="attr">0:</span> <span class="string">class1</span></span><br><span class="line">  <span class="attr">1:</span> <span class="string">class2</span></span><br><span class="line">  <span class="attr">2:</span> <span class="string">class3</span></span><br></pre></td></tr></table></figure></div>
+<p>其中<code>path</code>指向数据集的根目录，<code>train</code>、<code>val</code>、<code>test</code>分别指向训练集、验证集和测试集的图片路径，<code>names</code>是一个字典，键是类别编号，值是对应的类别名称，注意类别名称的顺序要和标签文件中的类别编号一致。创建好yaml文件后，就可以在训练和推理时指定这个yaml文件来加载数据集了。恭喜你，到这里已经创建好了一个自己的数据集了。</p>
+<h2 id="7-2-模型训练"><a href="#7-2-模型训练" class="headerlink" title="7.2 模型训练"></a>7.2 模型训练</h2><p>按照 <code>6. 训练</code>提到的内容进行训练即可，此时使用的就不再是coco数据集了，而是你自己准备的数据集了，需要注意的是，YOLO现在有非常多的模型，但是不同的模型对不同的数据集跑出来的效果可能会有很大的差别，所以在训练时建议尝试所有感兴趣的模型，看看哪个模型在你的数据集上表现最好，当然了，如果你对模型的原理有一定的了解的话，也可以根据数据集的特点来选择合适的模型进行训练，这样可能会更快地得到一个比较好的结果。一般来说，<strong>YOLOv8</strong>是一个最常被使用的版本，适用于大多数任务，如果你不确定选择哪个版本，可以先从YOLOv8开始尝试，后续如果需要使用其他版本再进行调整即可。</p>
+<h2 id="7-3-模型推理"><a href="#7-3-模型推理" class="headerlink" title="7.3 模型推理"></a>7.3 模型推理</h2><p>训练完成后会在<code>runs/train/weights</code>路径下生成一个best.pt文件，这个文件就是训练好的模型文件，可以用来进行推理了，推理的方法和前面提到的调用官方模型进行推理的方法基本相同，只需要把模型文件路径改为训练好的模型文件路径即可，如果发现效果不理想再调整参数进行重新训练即可。<strong>当然，许多时候优化训练参数真不如加大训练集的数量和场景</strong></p>
+<h1 id="8-模型评估"><a href="#8-模型评估" class="headerlink" title="8. 模型评估"></a>8. 模型评估</h1><h2 id="8-1-直观评估"><a href="#8-1-直观评估" class="headerlink" title="8.1 直观评估"></a>8.1 直观评估</h2><p>训练完成后，可以使用训练好的模型对验证集或测试集进行推理，看看模型的预测结果和真实标签的差距。或者更推荐的是直接用视频进行验证效果更容易看出来，尤其是出现不同场景下的预测效果。</p>
+<h2 id="8-2-框相近程度IoU"><a href="#8-2-框相近程度IoU" class="headerlink" title="8.2 框相近程度IoU"></a>8.2 框相近程度IoU</h2><p>假设实际预测的框为A，真实标签的框为B，$S_{A \cap B}$表示A和B的交集区域，$S_{A \cup B}$表示A和B的并集区域，则IoU可以表示为：<br>$$<br>IoU &#x3D; \frac{S_{A \cap B}}{S_{A \cup B}}<br>$$<br>也可以比较直观的发现：IoU的值越大，说明预测的框和真实标签的框越接近，反之则说明预测的框和真实标签的框越远离。一般来说，IoU的值在0到1之间，通常会设置一个阈值，常用阈值为0.5，如果IoU的值大于等于这个阈值，就认为预测的框是正确的，否则就认为预测的框是错误的。</p>
+<h2 id="8-3-TP、FP、FN"><a href="#8-3-TP、FP、FN" class="headerlink" title="8.3 TP、FP、FN"></a>8.3 TP、FP、FN</h2><ul>
+<li>TP（True Positive）真正例，如IoU算法中提到的，如果预测的框和真实标签的框的IoU值大于等于设定的阈值，那么就认为这个预测是正确的，也就是TP。</li>
+<li>FP（False Positive）假正例，与TP相反，如果预测的框和真实标签的框的IoU值小于设定的阈值，那么就认为这个预测是错误的，也就是FP。</li>
+<li>FN（False Negative）假反例,通俗的来讲就是没找的真实结果。<blockquote>
+<p>TP+FP就是预测结果总数<br>TP+FN就是实际结果总数</p>
+</blockquote>
+</li>
+</ul>
+<h1 id="8-4-精确率、召回率和F1分数"><a href="#8-4-精确率、召回率和F1分数" class="headerlink" title="8.4 精确率、召回率和F1分数"></a>8.4 精确率、召回率和F1分数</h1><ul>
+<li>精确率（Precision）指的是在所有被预测为正例的样本中，真正例的比例。计算公式为：$$Precision &#x3D; \frac{TP}{TP + FP}&#x3D;\frac{正确预测}{预测总数}$$精确率越高，说明预测结果里很多都对了。</li>
+<li>召回率（Recall）指的是在所有实际为正例的样本中，被正确预测为正例的比例。计算公式为：$$Recall &#x3D; \frac{TP}{TP + FN}&#x3D;\frac{正确预测}{真实总数} $$<br>召回率越高，说明越多的真实结果被找到了。</li>
+<li>F1分数（F1 Score）是精确率和召回率的调和平均数，计算公式为：$$F1 &#x3D; 2 * \frac{Precision * Recall}{Precision + Recall}$$<br>F1分数越高，说明模型在精确率和召回率之间取得了更好的平衡。<blockquote>
+<p>这三个是最常见的评估指标，都是越接近1越好。</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="8-5-预测过程"><a href="#8-5-预测过程" class="headerlink" title="8.5 预测过程"></a>8.5 预测过程</h2><h3 id="8-5-1-一次预测的三个步骤"><a href="#8-5-1-一次预测的三个步骤" class="headerlink" title="8.5.1 一次预测的三个步骤"></a>8.5.1 一次预测的三个步骤</h3><ol>
+<li>预处理：将输入的图片进行缩放、归一化等处理，使其符合模型的输入要求。</li>
+<li>模型推理：将预处理后的图片输入到训练好的模型中，模型会输出一些预测结果，包括预测的框的位置、类别和置信度等信息。</li>
+<li>后处理：对模型的输出结果进行后处理，去除掉大部分多余的预测结果，并把图还原成原来的大小。此时后处理是我们此时需要重点关注的。</li>
+</ol>
+<h3 id="8-5-2-后处理"><a href="#8-5-2-后处理" class="headerlink" title="8.5.2 后处理"></a>8.5.2 后处理</h3><ul>
+<li><strong>过滤掉置信度较低的预测结果(conf)</strong>：模型会输出每个预测结果的置信度，表示模型对这个预测结果的信心程度，通常会设置一个置信度阈值,一般取0.25，只有当预测结果的置信度大于等于这个阈值时，才会保留这个预测结果，否则就会被过滤掉</li>
+<li><strong>非极大值抑制(NMS)</strong>：在过滤掉置信度较低的预测结果后，可能会有一些预测结果的位置非常接近，甚至重叠，这时就需要使用非极大值抑制来去除掉这些重复的预测结果。简单来说就是预测相同目标的，只保留置信度最高的一个结果，其他的都丢掉了。注意的是：IoU的值会影响此过程，IoU的值越大，说明预测结果之间的重叠程度越高，那么就越有可能被认为是重复的预测结果，从而被去除掉。</li>
+<li><strong>限制预测结果(max_det)</strong>：限制预测结果总数不要超过设定值，一般都很大。</li>
+</ul>
+<h3 id="8-5-3-影响"><a href="#8-5-3-影响" class="headerlink" title="8.5.3 影响"></a>8.5.3 影响</h3><p>conf越小，预测出来的结果越多，如果把conf设置为0,相当于跳过来去弱，此时精确率P会很小，因为预测出来的结果很多，但是真实的数量又是有限的，但是召回率R有会很大，因为结果很多，所以有可能瞎猫碰到死耗子，一个小概率的框猜对结果。如果把conf稍微调高一点，那就会把一部分低概率的排除掉，低概率的结果大概率都是错误的，所以精确率P会提高，但是召回率R会降低，因为上述提到的瞎猫碰到死耗子的正确的结果被排除掉了。总之，conf的值需要根据实际情况进行调整，找到一个合适的平衡点，既能保证预测结果的数量，又能保证预测结果的质量。</p>
+<h2 id="8-6-PR曲线，mAP50-mAP50-95"><a href="#8-6-PR曲线，mAP50-mAP50-95" class="headerlink" title="8.6 PR曲线，mAP50,mAP50-95"></a>8.6 PR曲线，mAP50,mAP50-95</h2><ul>
+<li>PR曲线：PR曲线是精确率和召回率之间的关系的曲线图，通过PR曲线可以直观地看到模型在不同的置信度阈值下的表现，PR曲线越接近右上角，说明模型的表现越好。PR曲线和坐标轴包围的面积就是AP值，AP值越大，说明模型在单一类别的表现越好。mAP就是所有类别的AP值的平均值，mAP越大，说明模型在所有类别上的表现越好。<blockquote>
+<p>潜台词为：能找到一个对应的conf值，使P和R都尽可能的高，那么这个模型就比较好了。</p>
+</blockquote>
+</li>
+<li>mAP50：mAP50是指在IoU阈值为0.5时的平均精确率，mAP50越高，说明模型在IoU阈值为0.5时的表现越好。</li>
+<li>mAP50-95(平均平均平均精度)：mAP50-95是指在IoU阈值从0.5到0.95之间的平均精确率，mAP50-95越高，说明模型在IoU阈值从0.5到0.95之间的表现越好。</li>
+</ul>
+<h2 id="8-7-总结"><a href="#8-7-总结" class="headerlink" title="8.7 总结"></a>8.7 总结</h2><p>通过上述描述我们就知道了描述模型好坏的4个重要指标：精确率P、召回率R、mAP50和mAP50-95，通常来说，模型的表现越好，这四个指标的值就越高，但是在实际应用中，这四个指标之间可能会存在一定的权衡关系，需要合理取舍。</p>
+<h1 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续"></a>未完待续</h1><p>由于笔者也是刚开始接触深度学习与计算机视觉，所以在写这篇文章的时候也是边学边写的，后续等积攒一定调试训练经验之后会继续更新这篇文章或者写一篇新的文章来分享一些训练和调试模型的经验和技巧，敬请期待。</p>
+
+		</div>
+
+		
+		<div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
+			<div class="article-copyright-info-container">
+    <ul>
+        <li><strong>标题:</strong> 如何从零开始学习使用yolo</li>
+        <li><strong>作者:</strong> HeWenXuan</li>
+        <li><strong>创建于
+                :</strong> 2026-02-16 16:02:28</li>
+        
+            <li>
+                <strong>更新于
+                    :</strong> 2026-02-16 16:08:14
+            </li>
+        
+        <li>
+            <strong>链接:</strong> https://redefine.ohevan.com/2026/02/16/yolo-learn/
+        </li>
+        <li>
+            <strong>
+                版权声明:
+            </strong>
+            
+
+            
+                本文章采用 <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0">CC BY-NC-SA 4.0</a> 进行许可。
+            
+        </li>
+    </ul>
+</div>
+
+		</div>
+		
+
+		
+		<ul class="post-tags-box text-lg mt-1.5 flex-wrap justify-center flex md:hidden">
+			
+			<li class="tag-item mx-0.5">
+				<a href="/tags/%E6%95%99%E7%A8%8B/">#教程</a>&nbsp;
+			</li>
+			
+			<li class="tag-item mx-0.5">
+				<a href="/tags/yolo/">#yolo</a>&nbsp;
+			</li>
+			
+			<li class="tag-item mx-0.5">
+				<a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/">#计算机视觉</a>&nbsp;
+			</li>
+			
+		</ul>
+		
+
+		
+  <div class="recommended-article px-2 sm:px-6 md:px-8">
+   <div class="recommended-desktop">
+    <div class="recommended-article-header text-xl md:text-3xl font-bold mt-10">
+     <i aria-hidden="true"></i><span>推荐阅读</span>
+    </div>
+    <div class="recommended-article-group"><a class="recommended-article-item" href="/2025/05/07/about-me/" title="关于我和这个博客" rel="bookmark">
+  <img src="/images/zero_two.webp" alt="关于我和这个博客" class="!max-w-none">
+  <span class="title">关于我和这个博客</span>
+</a><a class="recommended-article-item" href="/2025/10/05/stm32-ubuntu-clion/" title="在Ubuntu上搭建STM32开发环境（CUBEMX+Clion+Ozone）" rel="bookmark">
+  <img src="https://cdn.jsdelivr.net/gh/mouxuanjun/cloud-img/image/20251227214224997.png" alt="在Ubuntu上搭建STM32开发环境（CUBEMX+Clion+Ozone）" class="!max-w-none">
+  <span class="title">在Ubuntu上搭建STM32开发环境（CUBEMX+Clion+Ozone）</span>
+</a><a class="recommended-article-item" href="/2026/02/12/hexo-blog/" title="新建一个博客以及博客维护" rel="bookmark">
+  <img src="https://cdn.jsdelivr.net/gh/mouxuanjun/cloud-img/image/20251227214124731.jpg" alt="新建一个博客以及博客维护" class="!max-w-none">
+  <span class="title">新建一个博客以及博客维护</span>
+</a></div>
+   </div>
+   <div class="recommended-mobile">
+   <div class="recommended-article-header text-xl md:text-3xl font-bold mt-10">
+     <i aria-hidden="true"></i><span>推荐阅读</span>
+   </div>
+   <div class="recommended-article-group"><a class="recommended-article-item" href="/2025/05/07/about-me/" title="关于我和这个博客" rel="bookmark">
+  <img src="/images/zero_two.webp" alt="关于我和这个博客" class="!max-w-none">
+  <span class="title">关于我和这个博客</span>
+</a><a class="recommended-article-item" href="/2025/10/05/stm32-ubuntu-clion/" title="在Ubuntu上搭建STM32开发环境（CUBEMX+Clion+Ozone）" rel="bookmark">
+  <img src="https://cdn.jsdelivr.net/gh/mouxuanjun/cloud-img/image/20251227214224997.png" alt="在Ubuntu上搭建STM32开发环境（CUBEMX+Clion+Ozone）" class="!max-w-none">
+  <span class="title">在Ubuntu上搭建STM32开发环境（CUBEMX+Clion+Ozone）</span>
+</a></div>
+   </div>
+  </div>
+
+		
+		<div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
+			
+			
+			<div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+				<a class="next" rel="next" href="/2026/02/12/hexo-blog/">
+					<span class="title flex justify-center items-center">
+						<span class="post-nav-title-item">新建一个博客以及博客维护</span>
+						<span class="post-nav-item">下一篇</span>
+					</span>
+					<span class="right arrow-icon flex justify-center items-center">
+						<i class="fa-solid fa-chevron-right"></i>
+					</span>
+				</a>
+			</div>
+			
+		</div>
+		
+
+
+		
+		<div class="comment-container px-2 sm:px-6 md:px-8 pb-8">
+			<div class="comments-container mt-10 w-full ">
+    <div id="comment-anchor" class="w-full h-2.5"></div>
+    <div class="comment-area-title w-full my-1.5 md:my-2.5 text-xl md:text-3xl font-bold">
+        评论
+    </div>
+    
+
+        
+            
+    <div id="gitalk-container"></div>
+    <script data-swup-reload-script
+            src="https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.8.0/gitalk.min.js"></script>
+    <script data-swup-reload-script>
+
+        function loadGitalk() {
+            let __gitalk__pathname = decodeURI(location.pathname);
+            const __gitalk__pathnameLength = __gitalk__pathname.length;
+            const __gitalk__pathnameMaxLength = 50;
+            if (__gitalk__pathnameLength > __gitalk__pathnameMaxLength) {
+                __gitalk__pathname = __gitalk__pathname.substring(0, __gitalk__pathnameMaxLength - 3) + '...';
+            }
+
+            try {
+                Gitalk && new Gitalk({
+                    clientID: 'Ov23libyMjgHpGmawtYJ',
+                    clientSecret: 'e11cf4caf24f0eea201cd47e5877681708993c85',
+                    repo: 'mouxuanjun.github.io',
+                    owner: 'mouxuanjun',
+                    admin: ['mouxuanjun'],
+                    id: __gitalk__pathname,
+                    language: 'en',
+                    proxy: 'https://github.com/login/oauth/access_token'
+                }).render('gitalk-container');
+
+            } catch (e) {
+                window.Gitalk = null;
+            }
+        }
+
+        if ('true') {
+            const loadGitalkTimeout = setTimeout(() => {
+                loadGitalk();
+                clearTimeout(loadGitalkTimeout);
+            }, 1000);
+        } else {
+            window.addEventListener('DOMContentLoaded', loadGitalk);
+        }
+    </script>
+
+
+
+        
+    
+</div>
+
+		</div>
+		
+	</div>
+
+	
+	<div class="toc-content-container">
+		<div class="post-toc-wrap">
+	<div class="post-toc">
+		<div class="toc-title">目录</div>
+		<div class="page-title">如何从零开始学习使用yolo</div>
+		<ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-%E7%AE%80%E8%BF%B0"><span class="nav-number">1.</span> <span class="nav-text">1. 简述</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-%E7%8E%AF%E5%A2%83"><span class="nav-number">2.</span> <span class="nav-text">2. 环境</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-%E7%9B%B8%E5%85%B3%E6%A6%82%E5%BF%B5%E4%BB%8B%E7%BB%8D"><span class="nav-number">3.</span> <span class="nav-text">3. 相关概念介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#3-1-YOLO%E7%89%88%E6%9C%AC%E9%80%89%E6%8B%A9"><span class="nav-number">3.1.</span> <span class="nav-text">3.1 YOLO版本选择</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-2-%E8%AE%AD%E7%BB%83%E5%92%8C%E6%8E%A8%E7%90%86"><span class="nav-number">3.2.</span> <span class="nav-text">3.2 训练和推理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-3-%E6%95%B0%E6%8D%AE%E9%9B%86"><span class="nav-number">3.3.</span> <span class="nav-text">3.3 数据集</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE"><span class="nav-number">4.</span> <span class="nav-text">4. 环境配置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#4-1-%E5%AE%89%E8%A3%85python%E7%8E%AF%E5%A2%83"><span class="nav-number">4.1.</span> <span class="nav-text">4.1 安装python环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-2-%E5%AE%89%E8%A3%85anconda"><span class="nav-number">4.2.</span> <span class="nav-text">4.2 安装anconda</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2-1-anconda%E7%AE%80%E4%BB%8B"><span class="nav-number">4.2.1.</span> <span class="nav-text">4.2.1 anconda简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2-2-anconda%E5%AE%89%E8%A3%85"><span class="nav-number">4.2.2.</span> <span class="nav-text">4.2.2 anconda安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2-3-anconda%E4%BD%BF%E7%94%A8"><span class="nav-number">4.2.3.</span> <span class="nav-text">4.2.3 anconda使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2-4-%E5%88%9B%E5%BB%BAyolo%E7%8E%AF%E5%A2%83"><span class="nav-number">4.2.4.</span> <span class="nav-text">4.2.4 创建yolo环境</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-3-%E5%AE%89%E8%A3%85pytorch"><span class="nav-number">4.3.</span> <span class="nav-text">4.3 安装pytorch</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-3-1-%E6%A3%80%E6%9F%A5%E9%A9%B1%E5%8A%A8"><span class="nav-number">4.3.1.</span> <span class="nav-text">4.3.1 检查驱动</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-3-2-%E8%BF%9B%E5%85%A5pytorch%E5%AE%98%E7%BD%91%E6%89%BE%E5%AE%89%E8%A3%85%E5%91%BD%E4%BB%A4"><span class="nav-number">4.3.2.</span> <span class="nav-text">4.3.2 进入pytorch官网找安装命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-3-3-%E6%89%A7%E8%A1%8C%E5%AE%89%E8%A3%85%E5%91%BD%E4%BB%A4"><span class="nav-number">4.3.3.</span> <span class="nav-text">4.3.3 执行安装命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-3-4-%E9%AA%8C%E8%AF%81%E5%AE%89%E8%A3%85"><span class="nav-number">4.3.4.</span> <span class="nav-text">4.3.4 验证安装</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-4-%E4%B8%8B%E8%BD%BDYOLO%E6%BA%90%E7%A0%81"><span class="nav-number">4.4.</span> <span class="nav-text">4.4 下载YOLO源码</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-4-1-%E6%8B%89%E5%8F%96%E6%BA%90%E7%A0%81"><span class="nav-number">4.4.1.</span> <span class="nav-text">4.4.1 拉取源码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-4-2-%E4%B8%8B%E8%BD%BD%E5%AE%98%E6%96%B9%E6%A8%A1%E5%9E%8B"><span class="nav-number">4.4.2.</span> <span class="nav-text">4.4.2 下载官方模型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-4-3-%E6%BA%90%E7%A0%81%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="nav-number">4.4.3.</span> <span class="nav-text">4.4.3 源码文件夹</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-4-4-%E4%B8%8B%E8%BD%BD%E5%89%A9%E4%BD%99%E6%96%87%E4%BB%B6"><span class="nav-number">4.4.4.</span> <span class="nav-text">4.4.4 下载剩余文件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-5-%E4%B8%8B%E8%BD%BDIDE"><span class="nav-number">4.5.</span> <span class="nav-text">4.5 下载IDE</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5-%E8%B0%83%E7%94%A8%E5%AE%98%E6%96%B9%E6%A8%A1%E5%9E%8B%E8%BF%9B%E8%A1%8C%E6%8E%A8%E7%90%86"><span class="nav-number">5.</span> <span class="nav-text">5. 调用官方模型进行推理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#5-1-%E6%9F%A5%E7%9C%8B%E5%AE%98%E6%96%B9%E5%9B%BE%E7%89%87%E7%A4%BA%E4%BE%8B"><span class="nav-number">5.1.</span> <span class="nav-text">5.1 查看官方图片示例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-2-%E6%91%84%E5%83%8F%E5%A4%B4%E6%8E%A8%E7%90%86"><span class="nav-number">5.2.</span> <span class="nav-text">5.2 摄像头推理</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#6-%E8%AE%AD%E7%BB%83"><span class="nav-number">6.</span> <span class="nav-text">6.训练</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#6-1-coco8%E6%95%B0%E6%8D%AE%E9%9B%86%E5%AF%B9YOLO11n%E6%A8%A1%E5%9E%8B%E8%BF%9B%E8%A1%8C%E8%AE%AD%E7%BB%83"><span class="nav-number">6.1.</span> <span class="nav-text">6.1 coco8数据集对YOLO11n模型进行训练</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-2-%E6%95%B0%E6%8D%AE%E9%9B%86%E6%9F%A5%E7%9C%8B"><span class="nav-number">6.2.</span> <span class="nav-text">6.2 数据集查看</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#6-2-1-%E5%AE%89%E8%A3%85labelimg%E6%A0%87%E6%B3%A8%E5%B7%A5%E5%85%B7"><span class="nav-number">6.2.1.</span> <span class="nav-text">6.2.1 安装labelimg标注工具</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-2-2-%E5%88%9B%E5%BB%BAclasses-txt%E6%96%87%E4%BB%B6"><span class="nav-number">6.2.2.</span> <span class="nav-text">6.2.2 创建classes.txt文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-2-3-%E4%BD%BF%E7%94%A8labelimg%E6%9F%A5%E7%9C%8Bcoco8%E6%95%B0%E6%8D%AE%E9%9B%86"><span class="nav-number">6.2.3.</span> <span class="nav-text">6.2.3 使用labelimg查看coco8数据集</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-3-%E5%8A%A0%E9%80%9F%E8%AE%AD%E7%BB%83"><span class="nav-number">6.3.</span> <span class="nav-text">6.3 加速训练</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#6-3-1-%E8%B0%83%E6%95%B4imgsz%E5%A4%A7%E5%B0%8F"><span class="nav-number">6.3.1.</span> <span class="nav-text">6.3.1 调整imgsz大小</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-3-2-%E8%B0%83%E6%95%B4batch%E5%A4%A7%E5%B0%8F"><span class="nav-number">6.3.2.</span> <span class="nav-text">6.3.2 调整batch大小</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-3-3-%E4%BD%BF%E7%94%A8%E7%BC%93%E5%AD%98"><span class="nav-number">6.3.3.</span> <span class="nav-text">6.3.3 使用缓存</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-3-4-%E8%B0%83%E6%95%B4workers%E6%95%B0%E9%87%8F"><span class="nav-number">6.3.4.</span> <span class="nav-text">6.3.4 调整workers数量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-3-5-%E4%BC%98%E5%8C%96%E6%BA%90%E7%A0%81"><span class="nav-number">6.3.5.</span> <span class="nav-text">6.3.5 优化源码</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#7-%E8%AE%AD%E7%BB%83%E4%B8%80%E4%B8%AA%E8%87%AA%E5%B7%B1%E7%9A%84%E6%A8%A1%E5%9E%8B"><span class="nav-number">7.</span> <span class="nav-text">7. 训练一个自己的模型</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#7-1-%E6%95%B0%E6%8D%AE%E9%9B%86%E5%87%86%E5%A4%87"><span class="nav-number">7.1.</span> <span class="nav-text">7.1 数据集准备</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#7-1-1-%E5%8E%BB%E7%BD%91%E4%B8%8A%E6%89%BE%E7%8E%B0%E6%88%90%E7%9A%84%E6%95%B0%E6%8D%AE%E9%9B%86"><span class="nav-number">7.1.1.</span> <span class="nav-text">7.1.1 去网上找现成的数据集</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-1-2-%E7%8E%B0%E6%88%90%E6%95%B0%E6%8D%AE%E9%9B%86%E4%BD%BF%E7%94%A8"><span class="nav-number">7.1.2.</span> <span class="nav-text">7.1.2 现成数据集使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-1-3-%E8%87%AA%E5%B7%B1%E6%8B%8D%E6%91%84%E6%95%B0%E6%8D%AE%E9%9B%86"><span class="nav-number">7.1.3.</span> <span class="nav-text">7.1.3 自己拍摄数据集</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-1-4-%E6%95%B0%E6%8D%AE%E9%9B%86%E6%A0%87%E6%B3%A8"><span class="nav-number">7.1.4.</span> <span class="nav-text">7.1.4 数据集标注</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-1-5-%E5%BF%AB%E9%80%9F%E6%A0%87%E6%B3%A8%E6%96%B9%E6%B3%95"><span class="nav-number">7.1.5.</span> <span class="nav-text">7.1.5 快速标注方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-1-6-%E6%95%B0%E6%8D%AE%E9%9B%86%E5%BD%92%E7%B1%BB"><span class="nav-number">7.1.6.</span> <span class="nav-text">7.1.6 数据集归类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-1-7-%E6%95%B0%E6%8D%AE%E9%9B%86yaml%E6%96%87%E4%BB%B6"><span class="nav-number">7.1.7.</span> <span class="nav-text">7.1.7 数据集yaml文件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-2-%E6%A8%A1%E5%9E%8B%E8%AE%AD%E7%BB%83"><span class="nav-number">7.2.</span> <span class="nav-text">7.2 模型训练</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-3-%E6%A8%A1%E5%9E%8B%E6%8E%A8%E7%90%86"><span class="nav-number">7.3.</span> <span class="nav-text">7.3 模型推理</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8-%E6%A8%A1%E5%9E%8B%E8%AF%84%E4%BC%B0"><span class="nav-number">8.</span> <span class="nav-text">8. 模型评估</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#8-1-%E7%9B%B4%E8%A7%82%E8%AF%84%E4%BC%B0"><span class="nav-number">8.1.</span> <span class="nav-text">8.1 直观评估</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-2-%E6%A1%86%E7%9B%B8%E8%BF%91%E7%A8%8B%E5%BA%A6IoU"><span class="nav-number">8.2.</span> <span class="nav-text">8.2 框相近程度IoU</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-3-TP%E3%80%81FP%E3%80%81FN"><span class="nav-number">8.3.</span> <span class="nav-text">8.3 TP、FP、FN</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8-4-%E7%B2%BE%E7%A1%AE%E7%8E%87%E3%80%81%E5%8F%AC%E5%9B%9E%E7%8E%87%E5%92%8CF1%E5%88%86%E6%95%B0"><span class="nav-number">9.</span> <span class="nav-text">8.4 精确率、召回率和F1分数</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#8-5-%E9%A2%84%E6%B5%8B%E8%BF%87%E7%A8%8B"><span class="nav-number">9.1.</span> <span class="nav-text">8.5 预测过程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#8-5-1-%E4%B8%80%E6%AC%A1%E9%A2%84%E6%B5%8B%E7%9A%84%E4%B8%89%E4%B8%AA%E6%AD%A5%E9%AA%A4"><span class="nav-number">9.1.1.</span> <span class="nav-text">8.5.1 一次预测的三个步骤</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-5-2-%E5%90%8E%E5%A4%84%E7%90%86"><span class="nav-number">9.1.2.</span> <span class="nav-text">8.5.2 后处理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-5-3-%E5%BD%B1%E5%93%8D"><span class="nav-number">9.1.3.</span> <span class="nav-text">8.5.3 影响</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-6-PR%E6%9B%B2%E7%BA%BF%EF%BC%8CmAP50-mAP50-95"><span class="nav-number">9.2.</span> <span class="nav-text">8.6 PR曲线，mAP50,mAP50-95</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-7-%E6%80%BB%E7%BB%93"><span class="nav-number">9.3.</span> <span class="nav-text">8.7 总结</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%9C%AA%E5%AE%8C%E5%BE%85%E7%BB%AD"><span class="nav-number">10.</span> <span class="nav-text">未完待续</span></a></li></ol>
+
+	</div>
+</div>
+	</div>
+	
+</div>
+			</div>
+
+			
+		</div>
+
+		<div class="main-content-footer">
+			<footer class="footer mt-5 py-5 h-auto text-base text-third-text-color relative border-t-2 border-t-border-color">
+    <div class="info-container py-3 text-center">
+        
+            <div class="customize-info my-1">你说的对，但是《原神》是由米哈游自主研发的一款全新开放世界冒险游戏。</div>
+        
+        <div class="text-center">
+            &copy;
+            
+              <span>2025</span>
+              -
+            
+            2026&nbsp;&nbsp;<div class="fa-3x">
+  <i class="fa-solid fa-snowboarding"></i>
+  <i class="fa-solid fa-snowboarding fa-rotate-90"></i>
+  <i class="fa-solid fa-snowboarding fa-rotate-180"></i>
+  <i class="fa-solid fa-snowboarding fa-rotate-270"></i>
+  <i class="fa-solid fa-snowboarding fa-flip-horizontal"></i>
+  <i class="fa-solid fa-snowboarding fa-flip-vertical"></i>
+  <i class="fa-solid fa-snowboarding fa-flip-both"></i>
+</div>
+&nbsp;&nbsp;<a href="/">He WenXuan</a>
+            
+                
+                <p class="post-count space-x-0.5">
+                    <span>
+                        共撰写了 5 篇文章
+                    </span>
+                    
+                        <span>
+                            共 14.2k 字
+                        </span>
+                    
+                </p>
+            
+        </div>
+        
+            <script data-swup-reload-script src="https://cn.vercount.one/js"></script>
+            <div class="relative text-center lg:absolute lg:right-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-right">
+                
+                    <span id="busuanzi_container_site_uv" class="lg:!block">
+                        <span class="text-sm">访问人数</span>
+                        <span id="busuanzi_value_site_uv"></span>
+                    </span>
+                
+                
+                    <span id="busuanzi_container_site_pv" class="lg:!block">
+                        <span class="text-sm">总访问量</span>
+                        <span id="busuanzi_value_site_pv"></span>
+                    </span>
+                
+            </div>
+        
+        <div class="relative text-center lg:absolute lg:left-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-left">
+            <span class="lg:block text-sm">由 <?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg class="relative top-[2px] inline-block align-baseline" version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1rem" height="1rem" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path fill="#0E83CD" d="M256.4,25.8l-200,115.5L56,371.5l199.6,114.7l200-115.5l0.4-230.2L256.4,25.8z M349,354.6l-18.4,10.7l-18.6-11V275H200v79.6l-18.4,10.7l-18.6-11v-197l18.5-10.6l18.5,10.8V237h112v-79.6l18.5-10.6l18.5,10.8V354.6z"/></svg><a target="_blank" class="text-base" href="https://hexo.io">Hexo</a> 驱动</span>
+            <span class="text-sm lg:block">主题&nbsp;<a class="text-base" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v2.8.2</a></span>
+        </div>
+        
+        
+            <div>
+                博客已运行 <span class="odometer" id="runtime_days" ></span> 天 <span class="odometer" id="runtime_hours"></span> 小时 <span class="odometer" id="runtime_minutes"></span> 分钟 <span class="odometer" id="runtime_seconds"></span> 秒
+            </div>
+        
+        
+            <script data-swup-reload-script>
+                try {
+                    function odometer_init() {
+                    const elements = document.querySelectorAll('.odometer');
+                    elements.forEach(el => {
+                        new Odometer({
+                            el,
+                            format: '( ddd).dd',
+                            duration: 200
+                        });
+                    });
+                    }
+                    odometer_init();
+                } catch (error) {}
+            </script>
+        
+        
+        
+    </div>  
+</footer>
+		</div>
+	</div>
+
+	
+	<div class="post-tools">
+		<div class="post-tools-container">
+	<ul class="article-tools-list">
+		<!-- TOC aside toggle -->
+		
+		<li class="right-bottom-tools page-aside-toggle">
+			<i class="fa-regular fa-outdent"></i>
+		</li>
+		
+
+		<!-- go comment -->
+		
+		<li class="go-comment">
+			<i class="fa-regular fa-comments"></i>
+		</li>
+		
+	</ul>
+</div>
+	</div>
+	
+
+	<div class="right-side-tools-container">
+		<div class="side-tools-container">
+	<ul class="hidden-tools-list">
+		<li class="right-bottom-tools tool-font-adjust-plus flex justify-center items-center">
+			<i class="fa-regular fa-magnifying-glass-plus"></i>
+		</li>
+
+		<li class="right-bottom-tools tool-font-adjust-minus flex justify-center items-center">
+			<i class="fa-regular fa-magnifying-glass-minus"></i>
+		</li>
+
+		<li class="right-bottom-tools tool-dark-light-toggle flex justify-center items-center">
+			<i class="fa-regular fa-moon"></i>
+		</li>
+
+		<!-- rss -->
+		
+
+		
+
+		<li class="right-bottom-tools tool-scroll-to-bottom flex justify-center items-center">
+			<i class="fa-regular fa-arrow-down"></i>
+		</li>
+	</ul>
+
+	<ul class="visible-tools-list">
+		<li class="right-bottom-tools toggle-tools-list flex justify-center items-center">
+			<i class="fa-regular fa-cog fa-spin"></i>
+		</li>
+		
+		<li class="right-bottom-tools tool-scroll-to-top flex justify-center items-center">
+			<i class="arrow-up fas fa-arrow-up"></i>
+			<span class="percent"></span>
+		</li>
+		
+		
+	</ul>
+</div>
+	</div>
+
+	<div class="image-viewer-container">
+	<img src="">
+</div>
+
+	
+	<div class="search-pop-overlay">
+	<div class="popup search-popup">
+		<div class="search-header">
+			<span class="search-input-field-pre">
+				<i class="fa-solid fa-keyboard"></i>
+			</span>
+			<div class="search-input-container">
+				<input autocomplete="off" autocorrect="off" autocapitalize="off" placeholder="站内搜索您需要的内容..." spellcheck="false" type="search" class="search-input">
+			</div>
+			<span class="popup-btn-close">
+				<i class="fa-solid fa-times"></i>
+			</span>
+		</div>
+		<div id="search-result">
+			<div id="no-result">
+				<i class="fa-solid fa-spinner fa-spin-pulse fa-5x fa-fw"></i>
+			</div>
+		</div>
+	</div>
+</div>
+	
+
+</main>
+
+
+<script  src="https://evan.beee.top/projects/hexo-theme-redefine@2.8.2/source/js/build/libs/Swup.min.js" ></script><script  src="https://evan.beee.top/projects/hexo-theme-redefine@2.8.2/source/js/build/libs/SwupSlideTheme.min.js" ></script><script  src="https://evan.beee.top/projects/hexo-theme-redefine@2.8.2/source/js/build/libs/SwupScriptsPlugin.min.js" ></script><script  src="https://evan.beee.top/projects/hexo-theme-redefine@2.8.2/source/js/build/libs/SwupProgressPlugin.min.js" ></script><script  src="https://evan.beee.top/projects/hexo-theme-redefine@2.8.2/source/js/build/libs/SwupScrollPlugin.min.js" ></script><script  src="https://evan.beee.top/projects/hexo-theme-redefine@2.8.2/source/js/build/libs/SwupPreloadPlugin.min.js" ></script>
+<script>
+    const swup = new Swup({
+        plugins: [
+            new SwupScriptsPlugin({
+                optin: true,
+            }),
+            new SwupProgressPlugin(),
+            new SwupScrollPlugin({
+                offset: 80,
+            }),
+            new SwupSlideTheme({
+                mainElement: ".main-content-body",
+            }),
+            new SwupPreloadPlugin(),
+        ],
+        containers: ["#swup"],
+    });
+</script>
+
+
+
+
+	<script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.8.2/source/js/build/tools/imageViewer.js" ></script><script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.8.2/source/js/build/utils.js" ></script><script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.8.2/source/js/build/main.js" ></script><script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.8.2/source/js/build/layouts/navbarShrink.js" ></script><script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.8.2/source/js/build/tools/scrollTopBottom.js" ></script><script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.8.2/source/js/build/tools/lightDarkSwitch.js" ></script><script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.8.2/source/js/build/layouts/categoryList.js" ></script>
+
+
+    <script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.8.2/source/js/build/tools/localSearch.js" ></script>
+
+
+
+    <script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.8.2/source/js/build/tools/codeBlock.js" ></script>
+
+
+
+    <script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.8.2/source/js/build/layouts/lazyload.js" ></script>
+
+
+
+    <script  src="https://evan.beee.top/projects/hexo-theme-redefine@2.8.2/source/js/build/tools/runtime.js" ></script>
+    <script  src="https://evan.beee.top/projects/hexo-theme-redefine@2.8.2/source/js/build/libs/odometer.min.js" ></script>
+    <link rel="stylesheet" href="https://evan.beee.top/projects/hexo-theme-redefine@2.8.2/source/assets/odometer-theme-minimal.css">
+
+
+
+  <script  src="https://evan.beee.top/projects/hexo-theme-redefine@2.8.2/source/js/build/libs/Typed.min.js" ></script>
+  <script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.8.2/source/js/build/plugins/typed.js" ></script>
+
+
+
+
+
+
+
+    <script  src="https://evan.beee.top/projects/hexo-theme-redefine@2.8.2/source/js/build/libs/anime.min.js" ></script>
+
+
+
+
+    <script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.8.2/source/js/build/tools/tocToggle.js" data-swup-reload-script></script><script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.8.2/source/js/build/layouts/toc.js" data-swup-reload-script></script><script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.8.2/source/js/build/plugins/tabs.js" data-swup-reload-script></script>
+
+
+<script  src="https://evan.beee.top/projects/hexo-theme-redefine@2.8.2/source/js/build/libs/moment-with-locales.min.js" data-swup-reload-script></script>
+<script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.8.2/source/js/build/layouts/essays.js" data-swup-reload-script></script>
+
+
+
+
+	
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+
+</html>
